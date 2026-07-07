@@ -1,6 +1,6 @@
 const catalog = [
-  { id: 'n1', cat: 'Naglar', name: 'Polka Dot Nail Set', price: 82, desc: 'Prickigt, coolt och redo för lite extra glimmer.' },
-  { id: 'n2', cat: 'Naglar', name: 'Mjuk Rosa-set', price: 149, desc: 'Mjuka toner med ett elegant och lekfullt uttryck.' },
+  { id: 'n1', cat: 'Naglar', name: 'Polka Dot', price: 82, desc: 'Prickigt, coolt och redo för lite extra glimmer.' },
+  { id: 'n2', cat: 'Naglar', name: 'Summer Design', price: 82, desc: 'Somrigt, elegant och lekfullt uttryck.' },
   { id: 't1', cat: 'Kläder', name: 'Greta Logotyp-tshirt', price: 249, desc: 'En enkel grund i ett personligt uttryck.' },
   { id: 't2', cat: 'Kläder', name: 'Solsken-printad tröja', price: 229, desc: 'Varm och omfamnande med ett gladare mönster.' },
   { id: 'a1', cat: 'Smycken', name: 'Pärlarmband', price: 129, desc: 'Lätt, fint och perfekt till vardagen.' },
