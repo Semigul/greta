@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gretas — Naglar, T-shirts & Accessoarer</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="site-header">
+      <div class="brand-block">
+        <p class="eyebrow">Små fynd, stor känsla</p>
+        <h1>Gretas</h1>
+        <p class="lead">Egendesignade naglar, t-shirts och accessoarer.</p>
+        <div class="header-actions">
+          <a class="btn btn-accent" href="#catalog">Utforska</a>
+          <a class="btn btn-ghost" href="#assistant">Möt Greta</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Featured selection">
+        <p class="hero-title">Veckans favorit</p>
+        <h2>Glitter Pop-set</h2>
+        <p>Ljust, sött och redo för lite extra glimmer.</p>
+      </div>
+    </header>
+
+    <section class="assistant" id="assistant" aria-label="Shopping assistant">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Personliga tips</p>
+          <h2>Gretas assistent</h2>
+        </div>
+        <p class="section-copy">Svara på tre snabba frågor så hittar vi ett mjukare och mer passande urval.</p>
+      </div>
+      <div class="steps">
+        <button class="step active" data-step="0">Vad</button>
+        <button class="step" data-step="1">Känsla</button>
+        <button class="step" data-step="2">Budget</button>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step active" data-step="0">
+          <h3>Vad letar du efter?</h3>
+          <div class="options">
+            <button class="opt" data-key="category" data-value="Naglar">Naglar</button>
+            <button class="opt" data-key="category" data-value="T-shirts">T-shirts</button>
+            <button class="opt" data-key="category" data-value="Accessoarer">Accessoarer</button>
+          </div>
+        </div>
+
+        <div class="flow-step" data-step="1">
+          <h3>Välj en känsla</h3>
+          <div class="options">
+            <button class="opt" data-key="vibe" data-value="Söt">Söt</button>
+            <button class="opt" data-key="vibe" data-value="Kraftfull">Kraftfull</button>
+            <button class="opt" data-key="vibe" data-value="Mjuk">Mjuk</button>
+          </div>
+        </div>
+
+        <div class="flow-step" data-step="2">
+          <h3>Budget</h3>
+          <div class="options">
+            <button class="opt" data-key="budget" data-value="Under 199 kr">Under 199 kr</button>
+            <button class="opt" data-key="budget" data-value="199-399 kr">199-399 kr</button>
+            <button class="opt" data-key="budget" data-value="Över 399 kr">Över 399 kr</button>
+          </div>
+        </div>
+
+        <div id="recommendation" class="recommendation" hidden>
+          <h3>Greta rekommenderar</h3>
+          <div id="rec-list" class="rec-list"></div>
+          <button id="reset" class="btn">Börja om</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Nya favoriter</p>
+          <h2>Katalog</h2>
+        </div>
+        <p class="section-copy">Små detaljer som ger vardagen lite extra charm.</p>
+      </div>
+      <div class="grid" id="catalog-grid">
+        <!-- populated from JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
