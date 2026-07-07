@@ -19,6 +19,7 @@ function formatPrice(value){
 function renderCatalog(items = catalog){
   catalogEl.innerHTML = items.map(p => `
     <article class="card">
+      ${p.name === 'Glitter Pop-set' ? '<img class="card-image" src="src/images/glitter-pop-set.svg" alt="Glitter Pop-set">' : ''}
       <div class="title">${p.name}</div>
       <div class="desc">Kategori: ${p.cat}</div>
       <div class="price-row"><strong>${formatPrice(p.price)}</strong><button class="btn" data-id="${p.id}">Se mer</button></div>
