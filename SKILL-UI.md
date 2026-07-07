@@ -12,7 +12,6 @@ Apply this skill to updates involving:
 - the hero header
 - the shopping assistant steps and options
 - catalog cards
-- the cart bar and add-to-cart actions
 - small section additions or content refreshes
 
 ## What to do
