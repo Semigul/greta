@@ -18,10 +18,10 @@ function renderCategory(category, targetId){
   const items = catalog.filter(item => item.cat === category);
   targetEl.innerHTML = items.map(item => `
     <article class="card">
-      ${item.id === 'n1' ? '<img class="card-image" src="src/images/Polka_dot_nail_set.PNG" alt="Polka Dot Nail Set">' : '<div class="card-image-placeholder" aria-label="Placeholder-bild"></div>'}
+      ${item.id === 'n1' ? '<img class="card-image" src="src/images/Polka_dot_nail_set.PNG" alt="Polka Dot Nail Set">' : item.id === 'n2' ? '<img class="card-image" src="src/images/Summer_ Blue Design .png" alt="Summer Design">' : '<div class="card-image-placeholder" aria-label="Placeholder-bild"></div>'}
       <div class="title">${item.name}</div>
       <div class="desc">${item.desc}</div>
-      <div class="price-row"><strong>${formatPrice(item.price)}</strong><button class="btn" data-id="${item.id}">Se mer</button></div>
+      <div class="price-row"><strong>${formatPrice(item.price)}</strong>${item.id === 'n2' ? '<a class="btn" href="summer-design.html">Se mer</a>' : `<button class="btn" data-id="${item.id}">Se mer</button>`}</div>
     </article>
   `).join('');
 }
