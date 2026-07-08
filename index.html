@@ -9,14 +9,17 @@
 <body>
   <nav class="top-nav" aria-label="Huvudnavigering">
     <div class="nav-container">
-      <a class="nav-brand" href="#intro">By Greta</a>
+      <a class="nav-brand" href="#intro" data-i18n="brand">By Greta</a>
       <div class="nav-links">
-        <a href="#naglar">Naglar</a>
-        <a href="summer-design.html">Summer Design</a>
+        <a href="#naglar" data-i18n="navNails">Naglar</a>
+        <a href="summer-design.html" data-i18n="navSummerDesign">Summer Design</a>
         <!--
         <a href="#klader">Kläder</a>
         <a href="#smycken">Smycken</a>
         -->
+      </div>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn" type="button" aria-label="Byt språk">EN</button>
       </div>
     </div>
   </nav>
@@ -24,9 +27,9 @@
   <main class="wrap">
     <header class="site-header" id="intro">
       <div class="brand-block">
-        <p class="eyebrow">By Greta</p>
-        <h1>Designa dina egna naglar</h1>
-        <p class="lead">Jag är Greta och jag älskar att designa olika sorters som ger ett personligt uttryck.</p>
+        <p class="eyebrow" data-i18n="brandEyebrow">By Greta</p>
+        <h1 data-i18n="heroTitle">Designa dina egna naglar</h1>
+        <p class="lead" data-i18n="heroLead">Jag är Greta och jag älskar att designa olika sorters som ger ett personligt uttryck.</p>
         <div class="header-actions">
           <!--
           <a class="btn btn-accent" href="#naglar">Utforska naglar</a>
@@ -36,18 +39,18 @@
       </div>
       <div class="hero-card" aria-label="Featured selection">
         <img class="hero-image" src="src/images/glitterpopupset.png" alt="Polka Dot Nail Set med rosa glitterdesign">
-         <h2>En liten butik med stort hjärta</h2>
-        <p>Varje detalj har ett personligt, lekfullt uttryck.</p>
+         <h2 data-i18n="heroCardTitle">En liten butik med stort hjärta</h2>
+        <p data-i18n="heroCardCopy">Varje detalj har ett personligt, lekfullt uttryck.</p>
       </div>
     </header>
 
     <section class="section-card" id="naglar" aria-labelledby="naglar-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Naglar</p>
-          <h2 id="naglar-title">Glitter, färg och känsla</h2>
+          <p class="eyebrow" data-i18n="navNails">Naglar</p>
+          <h2 id="naglar-title" data-i18n="sectionNaglarTitle">Glitter, färg och känsla</h2>
         </div>
-        <p class="section-copy">Korta, söta och glittriga nageldesign som gör varje dag lite extra fin.</p>
+        <p class="section-copy" data-i18n="sectionNaglarCopy">Korta, söta och glittriga nageldesign som gör varje dag lite extra fin.</p>
       </div>
       <div class="grid" id="naglar-grid"></div>
     </section>
